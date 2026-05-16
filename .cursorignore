@@ -1,0 +1,5 @@
+# Block Sensitive Credentials & Secret Keys From Cursor AI #
+*.env
+
+# Optional: Block Any Raw Data Files If You Create Them Later (e.g., local backup sql dumps)
+*.sql
