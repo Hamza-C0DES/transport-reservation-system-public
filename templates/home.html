@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1 style="text-align: center; color: #D4A017"> <!-- Incorporating CSS -->
+        Welcome to {{ company }}!
+    </h1>
+    <h2 style="text-align: center; color: #D4A017">
+        This is the home page.
+    </h2>
+    <img src="{{ image_path }}" alt="Company Logo" style="display: block; margin: 0 auto; width: 200px; height: 200px;">
+    
+    <input name="pickup_location" type="text" placeholder="Pickup Location" required>
+    <input name="dropoff_location" type="text" placeholder="Drop-off Location" required>
+    <input name="date" type="date" placeholder="Date" button="submit" required>
+    <input name="pickup_time" type="time" placeholder= "Pick-Up Time" required>
+    <button type="submit">Book Reservation</button>
+
+{% endblock %}
